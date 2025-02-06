@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function bubbleSort(arr) {
+    let n = arr.length;
+    let swapped;
+
+    // Continuă să parcurgi lista până nu mai sunt schimburi
+    do {
+        swapped = false;
+
+        // Parcurge elementele array-ului
+        for (let i = 0; i < n - 1; i++) {
+            // Compară elementul curent cu următorul
+            if (arr[i] > arr[i + 1]) {
+                // Schimbă elementele de loc
+                let temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+
+                swapped = true;
+            }
+        }
+        // După fiecare iterație, ultimul element este sortat
+        n--; 
+
+    } while (swapped); // Continuă până când nu mai sunt schimburi
+
+    return arr;
+}
+
+// Exemplu de utilizare:
+let myArray = [5, 2, 9, 1, 5, 6];
+console.log(bubbleSort(myArray));  // Output: [1, 2, 5, 5, 6, 9]
+</script>
+</body>
+</html>

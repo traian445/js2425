@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3
+        let x;
+        x = 5;
+        console.log(x);
+        
+
+        // for(i=0, j=10, u=25; 
+        //     i<20 && j<30 && u>15; 
+        //     i+=2, j+=4, u--)
+        //     {
+        //     console.log("i:" + i + "j:" + j + "u:" + u);
+        
+        // }
+         var myArr = [ 'Laptop', 'Tv', 'Mobile', 'Desktop', 'Monitor'];
+         myArr[5]= 'Book';
+         myArr[3]= 'Mouse';
+         myArr[8]= 'Tastatura';
+         myArr['birou'] = 'Birou';
+         var newArr = {
+         0: 'a',
+         1: 'b',
+         2: 'c'
+         }
+
+         for(let i = 0; i<myArr.length; i++) {
+            if(typeof myArr[i] != 'undefined'){
+            document.write('<p>' + myArr[i] + '</p>')
+        }
+         }
+
+         console.log(typeof myArr);
+         console.log(myArr.birou);
+         console.log(typeof newArr);
+        console.log(newArr['d']);
+    </script>
+</body>
+</html>
